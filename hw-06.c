@@ -23,7 +23,7 @@ int main(){
             anotherTenIntPointer[9 - i] = tenIntPointer[i];
         }
     }
-    for (i = 9; i>0; i--){
+    for (i = 9; i>=0; i--){
         printf("value of %p is %d\n", anotherTenInt + i, anotherTenInt[i]);
     }
     return 0;
