@@ -13,5 +13,8 @@ int main(){
     for (i = 0; i<10; i++){
         printf("value of %p is %d\n", tenInt + i, tenInt[i]);
     }
+    int anotherTenInt[10];
+    int *tenIntPointer = tenInt;
+    int *anotherTenIntPointer = anotherTenInt;
     return 0;
 }
