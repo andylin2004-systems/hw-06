@@ -16,5 +16,15 @@ int main(){
     int anotherTenInt[10];
     int *tenIntPointer = tenInt;
     int *anotherTenIntPointer = anotherTenInt;
+    for (i = 0; i < 10; i++){
+        if (i % 2 == 0){
+            *(anotherTenIntPointer + 9 - i) = *(tenIntPointer + i);
+        }else{
+            anotherTenIntPointer[9 - i] = tenIntPointer[i];
+        }
+    }
+    for (i = 9; i>0; i--){
+        printf("value of %p is %d\n", anotherTenInt + i, anotherTenInt[i]);
+    }
     return 0;
 }
